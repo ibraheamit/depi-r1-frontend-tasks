@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Definition of Arabic -->
+        <meta charset="UTF-8" />
+        <!-- viewport to improve view Website -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- keywords to improve SEO  -->
+        <meta name="keywords" content="emoji, emojis" />
+        <!-- Favicon -->
+        <link rel="icon" href="https://emojigraph.org/static/img/logo.fa9e46678e09.png" />
+        <!-- HTML Page Title -->
+        <title>emoji</title>
+        <!-- External stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <section class="container-emoji">
+            <img src="assets/img/bgemojis.png" usemap="#emojis"/>
+            <map name="emojis">
+                <area class="emoji" shape="circle" coords="79,314,39" onclick="document.getElementById('myimg').src='assets/img/emoji.png'"/>
+                <area class="emoji" shape="circle" coords="152,318,29" onclick="document.getElementById('myimg').src='assets/img/emoji2.png'"/>
+                <area class="emoji" shape="circle" coords="229,320,43" onclick="document.getElementById('myimg').src='assets/img/emoji3.png'"/>
+                <area class="emoji" shape="circle" coords="312,317,36" onclick="document.getElementById('myimg').src='assets/img/emoji4.png'"/>
+            </map>
+            <div class="fullimg">
+                <img src="assets/img/question.png" id="myimg">
+            </div>
+        </section>
+        
+    </body>
+</html>

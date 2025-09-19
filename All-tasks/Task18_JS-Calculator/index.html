@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Design</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <section>
+            <form class="calculator">
+                <!-- Calculator Display Screen -->
+                <div class="calc-screen">
+                    <input type="text" id="screen" class="user-input" placeholder="0">
+                    <input type="text" id="eee" class="user-input" placeholder="0">
+                </div>
+                <!-- Calculator Buttons -->
+                <div class="buttons">
+                    <div class="container">
+                        <input type="button" value="/" onclick="di()" class="mc">
+                        <input type="button" value="(" onclick="screen.value+='('" class="mc">
+                        <input type="button" value=")" onclick="screen.value+=')'" class="mc">
+                        <input type="button" value="%" onclick="screen.value+='%'" class="mc">
+                        <input type="button" value="C" onclick="result()" class="opt">
+                        <input type="button" value="&#247;" onclick="di()" class="opt">  <!--  %  -->
+                        <input type="button" value="&#215;" onclick="mul()" class="opt">  <!--  x  -->
+                        <input type="button" value="&#9003;" onclick="del()" class="opt">  <!--  Del  -->
+                        <input type="button" value="7" onclick="screen.value+=7" class="numbers">
+                        <input type="button" value="8" onclick="screen.value+=8" class="numbers">
+                        <input type="button" value="9" onclick="screen.value+=9" class="numbers">
+                        <input type="button" value="&#8722;" onclick="sub()" class="opt">  <!--  -  -->
+                        <input type="button" value="4" onclick="screen.value+=4" class="numbers">
+                        <input type="button" value="5" onclick="screen.value+=5" class="numbers">
+                        <input type="button" value="6" onclick="screen.value+=6" class="numbers">
+                        <input type="button" value="&#43;" onclick="add()" class="opt">  <!--  +  -->
+                        <input type="button" value="1" onclick="screen.value+=1" class="numbers">
+                        <input type="button" value="2" onclick="screen.value+=2" class="numbers">
+                        <input type="button" value="3" onclick="screen.value+=3" class="numbers">
+                        <input type="button" value="00" onclick="screen.value+='00'" class="numbers">
+                        <input type="button" value="0" onclick="screen.value+=0" class="numbers">
+                        <input type="button" value="." onclick="screen.value+='.'" class="numbers">
+                        <input type="button" value="&#61;" onclick="eee.value=eval(screen.value)" class="item">  <!--  =  -->
+                    </div>
+                </div>
+            </form>
+        </section>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

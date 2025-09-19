@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+/* ----------------------------------------section header---------------------------------------- */
+/* section navbar */
+ul {
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+.navbar .container-nav img {
+    padding: 5px 10px 0px 20px;
+}
+li a , .drop-btn{
+    font-weight: 900;
+    padding: 20px;
+    display: inline-block;
+}
+li a:hover, .dropdown:hover .drop-btn {
+    background-color: rgb(0, 183, 255);
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #232b2d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #43a3bb42;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* section video */
+.container-video {
+    display: flex;
+    align-items: end;
+    padding: 100px 100px;
+    position: relative;
+    justify-content: center;
+    min-height: 600px;
+    text-align: center;
+    color: #fff;
+}
+.container-video video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.video-btn{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 15px 25px;
+    transition: 0.3s;
+}
+.video-btn:hover {
+    background-color: #fff;
+    color: #000000;
+}
+@media (max-width: 1000px) {
+    .container-video {
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 600px) {
+    .container-video {
+        padding: 10px 15px;
+        transition: 0.7s;
+    }
+}
+/* ----------------------------------------section main---------------------------------------- */
+/* section img */
+.container-img {
+    background-color: rgb(9, 21, 63);
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+.card-img{
+    display: inline-block;
+    margin: 15px;
+    overflow: hidden;
+    max-height: 366px;
+}
+.card-img img{
+    transition: 0.25s ease;
+}
+.card-img:hover img{
+    transform: scale(1.1);
+}
+/* section parks */
+.container-parks {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.container-parks h2 {
+    font-size: xx-large;
+    padding: 15px;
+}
+.content1-parks{
+    display: inline-block;
+    margin: 15px;
+    overflow: hidden;
+    max-height: 418px;
+    position: relative;
+    box-shadow: 3px 3px 35px #000;
+}
+.content1-parks .img1{
+    width: 100%;
+    height: auto;
+    transition: 0.25s ease;
+}
+.content1-parks:hover .img1{
+    transform: scale(1.05);
+}
+.content2-parks {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+.content2-parks p {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content2-parks a {
+    color: white;
+    font-size: x-large;
+    background-color: #07667993;
+    padding: 8px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.content2-parks a:hover {
+    background-color: #ffffff85;
+    color: #000000;
+}
+@media (max-width: 1015px) {
+    .content1-parks{
+        height: 900px;
+    }
+    .content2-parks {
+        background-image: linear-gradient(rgba(107, 6, 6, 0.685), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        top: 200px;
+        right: 0;
+        transition: 0.2s;
+    }
+}
+@media (max-width: 620px) {
+    .content1-parks .img1{
+        width: 170%;
+        transition: 0.3s;
+    }
+}
+/* ----------------------------------------section footer---------------------------------------- */
+footer p {
+    font-size: large;
+    text-align: center;
+    padding: 25px;
+}

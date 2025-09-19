@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Recipe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 70px !important;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .image-upload {
+            text-align: center;
+        }
+        .image-upload img {
+            width: 100%;
+            height: auto;
+        }
+        .btn-publish {
+            display: block;
+            margin: 20px auto;
+            background-color: #FF6347;
+        }
+        .btn-publish:hover {
+            background-color: #f43614;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+<div class="form-container">
+    <h3 class="form-title">Add New Recipe</h3>
+
+    <form>
+        <div class="row form-section">
+            <!-- Title and Category -->
+            <div class="col-md-6">
+                <label for="recipeTitle" class="form-label">Title</label>
+                <input type="text" class="form-control" id="recipeTitle" placeholder="Title">
+            </div>
+            <div class="col-md-6">
+                <label for="categorySelect" class="form-label">Please Select a category</label>
+                <select class="form-select" id="categorySelect">
+                    <option>Breakfast</option>
+                    <option>Main Course</option>
+                    <option>Dinner</option>
+                    <option>Dessert</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row form-section">
+            <!-- Description and Image -->
+            <div class="col-md-6">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="5" placeholder="Description"></textarea>
+            </div>
+            <div class="col-md-6 image-upload">
+                <label for="imageTitle" class="form-label">Title</label>
+                <div class="mb-3">
+                    <img src="https://via.placeholder.com/150" id="previewImage" alt="Recipe Image" class="img-thumbnail">
+                    <input class="form-control" type="file" id="imageUpload" accept="image/*">
+                </div>
+            </div>
+        </div>
+
+        <div class="row form-section">
+            <!-- Time, Servings, Level, Calories Dropdowns -->
+            <div class="col-md-3">
+                <label for="prepTime" class="form-label">Prep Time</label>
+                <select class="form-select" id="prepTime">
+                    <option>Select Prep Time</option>
+                    <option>10 mins</option>
+                    <option>20 mins</option>
+                    <option>30 mins</option>
+                    <option>45 mins</option>
+                    <option>1 hour</option>
+                </select>
+            </div>
+            
+            <div class="col-md-3">
+                <label for="servings" class="form-label">Number of Servings</label>
+                <select class="form-select" id="servings">
+                    <option>Select Servings</option>
+                    <option>1 serving</option>
+                    <option>2 servings</option>
+                    <option>4 servings</option>
+                    <option>6 servings</option>
+                    <option>8 servings</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="level" class="form-label">Level</label>
+                <select class="form-select" id="level">
+                    <option>Select Level</option>
+                    <option>Easy</option>
+                    <option>Intermediate</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="calories" class="form-label">Calories</label>
+                <select class="form-select" id="calories">
+                    <option>Select Calories</option>
+                    <option>Under 200 kcal</option>
+                    <option>200-400 kcal</option>
+                    <option>400-600 kcal</option>
+                    <option>600-800 kcal</option>
+                    <option>Over 800 kcal</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row form-section">
+            <!-- Ingredients -->
+            <label for="ingredients" class="form-label">Ingredients</label>
+            <div id="ingredientList" class="col-12">
+                <input type="text" class="form-control mb-2 ingredient" placeholder="Ingredient 1">
+            </div>
+        </div>
+
+        <div class="row form-section">
+            <!-- Preparation -->
+            <label for="preparation" class="form-label">Preparation</label>
+            <div id="preparationList" class="col-12">
+                <input type="text" class="form-control mb-2 preparation" placeholder="Step 1">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-publish">Publish Recipe</button>
+        <!-- <a href="Recipes.html">See Recipes</a> -->
+    </form>
+</div>
+
+
+
+<script src="add-new-recipe.js" defer></script>
+
+</body>
+</html>

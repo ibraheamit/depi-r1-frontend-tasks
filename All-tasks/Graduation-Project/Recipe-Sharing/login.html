@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+    --orange-color: orangered;
+    --gray-color: gray;
+    --light-gray: rgb(245, 245, 245);
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+.login-page {
+    background-color: rgba(128, 128, 128, 0.144);
+    min-height: 100vh;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    width: 100px;
+}
+
+h3 {
+    color: gray;
+}
+
+.form-label {
+    font-weight: bold;
+    color: gray;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.btn-orange {
+    background-color: orangered;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+    border: none;
+}
+
+/* .btn-orange:hover {
+    background-color: darken(var(--orange-color), 10%);
+} */
+
+
+.signup-link {
+    color: orangered;
+    text-decoration: none;
+}
+
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-card {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid login-page">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card p-4 login-card">
+                    <!-- <div class="text-center mb-3">
+                        <img src="step-away-from-1.jpg" alt="Logo" class="logo-img">
+                    </div> -->
+                    <h3 class="text-center mb-4">Login to Explore Recipes</h3>
+
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                required>
+                        </div>
+
+                        <button type="submit" class="btn btn-orange btn-block w-100">Login</button>
+                    </form>
+
+
+                    <div class="text-center mt-4">
+                        <p>New User? <a href="/register" class="signup-link">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="login.js"></script>
+</body>
+</html>
